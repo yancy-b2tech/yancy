@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moran珠宝 - 璀璨珠宝，永恒之美</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>MORAN</h1>
+                <span>珠宝</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#collections">珠宝系列</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">MORAN珠宝</h1>
+            <p class="hero-subtitle">璀璨珠宝，永恒之美</p>
+            <p class="hero-description">每一件珠宝都承载着独特的故事，每一颗宝石都闪耀着永恒的光芒</p>
+            <button class="cta-button">探索系列</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="精美珠宝">
+        </div>
+    </section>
+
+    <!-- 珠宝系列展示 -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <h2 class="section-title">珠宝系列</h2>
+            <p class="section-subtitle">精心挑选的珠宝系列，展现独特魅力</p>
+            
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="钻石系列" id="diamond-img">
+                        <div class="image-overlay">
+                            <button class="change-image-btn" onclick="changeImage('diamond-img')">
+                                <i class="fas fa-camera"></i> 更换图片
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>钻石系列</h3>
+                        <p>永恒璀璨的钻石，见证每一个珍贵时刻</p>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="黄金系列" id="gold-img">
+                        <div class="image-overlay">
+                            <button class="change-image-btn" onclick="changeImage('gold-img')">
+                                <i class="fas fa-camera"></i> 更换图片
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>黄金系列</h3>
+                        <p>经典黄金工艺，传承千年的贵族气质</p>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="翡翠系列" id="jade-img">
+                        <div class="image-overlay">
+                            <button class="change-image-btn" onclick="changeImage('jade-img')">
+                                <i class="fas fa-camera"></i> 更换图片
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>翡翠系列</h3>
+                        <p>东方神韵的翡翠珠宝，彰显优雅品味</p>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="珍珠系列" id="pearl-img">
+                        <div class="image-overlay">
+                            <button class="change-image-btn" onclick="changeImage('pearl-img')">
+                                <i class="fas fa-camera"></i> 更换图片
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>珍珠系列</h3>
+                        <p>温润如玉的珍珠，诠释女性柔美魅力</p>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="彩宝系列" id="gemstone-img">
+                        <div class="image-overlay">
+                            <button class="change-image-btn" onclick="changeImage('gemstone-img')">
+                                <i class="fas fa-camera"></i> 更换图片
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>彩宝系列</h3>
+                        <p>绚烂多彩的宝石，展现个性与活力</p>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="定制系列" id="custom-img">
+                        <div class="image-overlay">
+                            <button class="change-image-btn" onclick="changeImage('custom-img')">
+                                <i class="fas fa-camera"></i> 更换图片
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>定制系列</h3>
+                        <p>专属定制服务，打造独一无二的珠宝</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我们</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>MORAN珠宝的故事</h3>
+                    <p>MORAN珠宝成立于珠宝工艺的传承与创新之中，我们致力于为每一位客户打造独特而精美的珠宝作品。每一件珠宝都经过精心设计和制作，体现了我们对品质和美学的不懈追求。</p>
+                    <p>我们相信，珠宝不仅仅是装饰品，更是情感的载体和美好回忆的见证。从选材到设计，从工艺到服务，我们始终坚持最高标准，为客户提供卓越的珠宝体验。</p>
+                </div>
+                <div class="team-info">
+                    <h3>团队介绍</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>夏仕艳</h4>
+                                <p class="member-title">创始人</p>
+                                <p class="member-description">拥有多年珠宝行业经验，致力于将传统工艺与现代设计完美融合</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>颜鑫</h4>
+                                <p class="member-title">监事</p>
+                                <p class="member-description">负责品质监督和客户服务，确保每一件作品都达到最高标准</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>地址</h4>
+                            <p>中国杭州市萧山区钱江世纪城</p>
+                            <p>Qianjiang Century City, Xiaoshan District, Hangzhou, China</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>电话</h4>
+                            <p>+86 15361785248</p>
+                            <p>+86 13266159914</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>jasonayanxin@outlook.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>营业时间</h4>
+                            <p>周一至周日 9:00-21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>留言咨询</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="联系电话">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="留言内容" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MORAN珠宝</h3>
+                    <p>璀璨珠宝，永恒之美</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#collections">珠宝系列</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>服务支持</h4>
+                    <ul>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">保养指南</a></li>
+                        <li><a href="#">尺寸指南</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p><i class="fas fa-phone"></i> +86 15361785248</p>
+                    <p><i class="fas fa-envelope"></i> jasonayanxin@outlook.com<</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MORAN珠宝. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 图片上传模态框 -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>更换图片</h3>
+            <div class="upload-area">
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <div class="upload-placeholder" onclick="document.getElementById('imageInput').click()">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>点击选择图片或拖拽图片到此处</p>
+                    <p class="upload-hint">支持 JPG, PNG, GIF 格式</p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn-cancel">取消</button>
+                <button class="btn-confirm">确认更换</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
